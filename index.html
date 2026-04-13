@@ -49,7 +49,7 @@
     border-bottom: 1px solid var(--border);
   }
   .nav-logo {
-    font-family:  sans-serif; font-weight: 800; font-size: 1rem;
+    font-family: sans-serif; font-weight: 800; font-size: 1rem;
     color: var(--text); text-decoration: none; letter-spacing: -0.01em;
   }
   .nav-logo span { color: var(--accent2); }
@@ -87,7 +87,7 @@
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
   .hero-name {
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-size: clamp(1.6rem, 3.2vw, 2.4rem);
     font-weight: 800; line-height: 1.1; letter-spacing: -0.02em;
     margin-bottom: 0.35rem;
@@ -267,7 +267,7 @@
     padding: 0.62rem 1.25rem; border-radius: 100px;
     border: 1px solid var(--border2); background: var(--card);
     color: var(--text2); text-decoration: none; font-size: 0.835rem; transition: all 0.2s;
-    cursor: pointer;
+    cursor: pointer; font-family: inherit;
   }
   .social-link:hover { color: var(--text); border-color: var(--accent); background: var(--glow); }
   .social-link svg { width: 15px; height: 15px; flex-shrink: 0; }
@@ -322,7 +322,7 @@
       computer science graduate, and a certified web developer who turns complex problems into elegant software.
     </p>
     <div class="hero-actions">
-      <a href="#projects" class="btn-primary">View my work →</a>
+      <a href="#projects" class="btn-primary">View my work &rarr;</a>
       <a href="#contact" class="btn-ghost">Get in touch</a>
     </div>
     <div class="hero-stats">
@@ -355,49 +355,37 @@
     </div>
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <div class="skill-icon" style="background:rgba(42,126,245,0.12);">⚙️</div>
+        <div class="skill-icon" style="background:rgba(42,126,245,0.12);">&#9881;&#65039;</div>
         <div class="skill-title">Backend Development</div>
         <p class="skill-desc">Building robust server-side logic and RESTful APIs that power real-world applications — structured, secure, and scalable.</p>
-        <div class="skill-tags"><span class="tag">PHP</span><span class="tag">REST APIs</span><span class="tag">MySQL</span><span class="tag">Database </span></div>
+        <div class="skill-tags"><span class="tag">PHP</span><span class="tag">REST APIs</span><span class="tag">MySQL</span><span class="tag">Database</span></div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon" style="background:rgba(45,212,191,0.12);">🖥️</div>
+        <div class="skill-icon" style="background:rgba(45,212,191,0.12);">&#128421;&#65039;</div>
         <div class="skill-title">Frontend Development</div>
         <p class="skill-desc">Crafting responsive, mobile-first interfaces with modern JavaScript frameworks that users love to interact with and excellent UI/UX.</p>
         <div class="skill-tags"><span class="tag">Vue.js</span><span class="tag">JavaScript</span><span class="tag">Responsive UI</span><span class="tag">Mobile-First</span></div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon" style="background:rgba(244,114,182,0.12);">📱</div>
+        <div class="skill-icon" style="background:rgba(244,114,182,0.12);">&#128241;</div>
         <div class="skill-title">Progressive Web Apps</div>
         <p class="skill-desc">Designing and deploying PWAs that bridge web and native — push notifications, offline capability, fast load times.</p>
         <div class="skill-tags"><span class="tag">PWA</span><span class="tag">Push Notifications</span><span class="tag">Service Workers</span></div>
       </div>
-      <div class="skill-card reveal"> 
-        <div class="skill-icon" style="background:rgba(251,191,36,0.12);">☁️</div>
-        <div class="skill-title">Cloud &amp; Infrastructure</div>
-        <p class="skill-desc">
-            Experienced with Laravel Cloud for deploying and managing applications, with a focus on efficient deployment, scalability, and performance optimization.
-        </p>
-        <div class="skill-tags">
-            <span class="tag">Laravel Cloud</span>
-            <span class="tag">Cloud Deployment</span>
-            <span class="tag">Performance Optimization</span>
-        </div>
-        </div>
-    <div class="skill-card reveal">
-        <div class="skill-icon" style="background:rgba(42,126,245,0.12);">🗄️</div>
-        <div class="skill-title">Database Management</div>
-        <p class="skill-desc">
-            Working with databases to store, manage, and retrieve data efficiently in web applications.
-        </p>
-        <div class="skill-tags">
-            <span class="tag">MySQL</span>
-            <span class="tag">Database Design</span>
-            <span class="tag">Writing Optimised Query </span>
-        </div>
-        </div>
       <div class="skill-card reveal">
-        <div class="skill-icon" style="background:rgba(45,212,191,0.12);">🔗</div>
+        <div class="skill-icon" style="background:rgba(251,191,36,0.12);">&#9729;&#65039;</div>
+        <div class="skill-title">Cloud &amp; Infrastructure</div>
+        <p class="skill-desc">Experienced with Laravel Cloud for deploying and managing applications, with a focus on efficient deployment, scalability, and performance optimization.</p>
+        <div class="skill-tags"><span class="tag">Laravel Cloud</span><span class="tag">Cloud Deployment</span><span class="tag">Performance Optimization</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon" style="background:rgba(42,126,245,0.12);">&#128452;&#65039;</div>
+        <div class="skill-title">Database Management</div>
+        <p class="skill-desc">Working with databases to store, manage, and retrieve data efficiently in web applications.</p>
+        <div class="skill-tags"><span class="tag">MySQL</span><span class="tag">Database Design</span><span class="tag">Writing Optimised Query</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon" style="background:rgba(45,212,191,0.12);">&#128279;</div>
         <div class="skill-title">Full-Stack Integration</div>
         <p class="skill-desc">Seamlessly connecting frontend and backend through well-designed APIs — building complete, production-ready software end-to-end.</p>
         <div class="skill-tags"><span class="tag">API Integration</span><span class="tag">System Design</span></div>
@@ -422,38 +410,31 @@
           <p class="project-desc">A Ramadan-focused Progressive Web App built for genuine user engagement. Features daily Islamic reminders, push notification infrastructure, and ibadah tracking — a complete PWA from architecture to deployment.</p>
           <div class="project-pills"><span class="pill">PWA</span><span class="pill">Push Notifications</span><span class="pill">Vue.js</span><span class="pill">PHP</span><span class="pill">MySQL</span></div>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow">&rarr;</div>
       </div>
       <div class="project-card reveal">
         <div>
-           <div class="project-name">Look</div>
+          <div class="project-name">Look</div>
           <p class="project-desc">An online service marketplace featuring service listings, user interaction systems, and full marketplace structure. Demonstrates the ability to architect complex multi-user systems with scalable application logic.</p>
           <div class="project-pills"><span class="pill">Multi-user System</span><span class="pill">PHP</span><span class="pill">REST API</span><span class="pill">MySQL</span><span class="pill">Vue.js</span></div>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow">&rarr;</div>
       </div>
       <div class="project-card reveal">
         <div>
-         <div class="project-name">DailyThoughts Blog Platform</div>
-            <p class="project-desc">
-            A simple blog application built to create, read, update, and delete posts, with basic backend logic and frontend integration.
-            </p>
-            <div class="project-pills">
-            <span class="pill">CRUD</span>
-            <span class="pill">PHP</span>
-            <span class="pill">MySQL</span>
-            <span class="pill">JavaScript</span>
-            </div>
-            </div>
-        <div class="project-arrow">→</div>
+          <div class="project-name">DailyThoughts Blog Platform</div>
+          <p class="project-desc">A simple blog application built to create, read, update, and delete posts, with basic backend logic and frontend integration.</p>
+          <div class="project-pills"><span class="pill">CRUD</span><span class="pill">PHP</span><span class="pill">MySQL</span><span class="pill">JavaScript</span></div>
+        </div>
+        <div class="project-arrow">&rarr;</div>
       </div>
       <div class="project-card reveal">
         <div>
-           <div class="project-name">Kaysites Platform</div>
+          <div class="project-name">Kaysites Platform</div>
           <p class="project-desc">A project-request platform allowing users to submit project ideas. Features request workflows, user interaction, and admin management — solving a real business need through purposeful software design.</p>
           <div class="project-pills"><span class="pill">Request Workflow</span><span class="pill">PHP</span><span class="pill">Vue.js</span><span class="pill">MySQL</span><span class="pill">REST API</span></div>
         </div>
-        <div class="project-arrow">→</div>
+        <div class="project-arrow">&rarr;</div>
       </div>
     </div>
   </div>
@@ -470,26 +451,26 @@
     </div>
     <div class="achievements-grid">
       <div class="achievement-card reveal">
-        <div class="ach-icon">🥇</div>
+        <div class="ach-icon">&#127945;</div>
         <div><div class="ach-title">Best Graduating Student</div><div class="ach-sub">Skyline University Nigeria — Computer Science</div></div>
       </div>
       <div class="achievement-card reveal">
-        <div class="ach-icon">☁️</div>
+        <div class="ach-icon">&#9729;&#65039;</div>
         <div><div class="ach-title">AWS Certification</div><div class="ach-sub">Amazon Web Services — Cloud Computing</div></div>
       </div>
       <div class="achievement-card reveal">
-        <div class="ach-icon">🌐</div>
+        <div class="ach-icon">&#127760;</div>
         <div><div class="ach-title">Web Development Certification</div><div class="ach-sub">Udemy — Full-Stack Web Development</div></div>
       </div>
       <div class="achievement-card reveal">
-        <div class="ach-icon">🧩</div>
+        <div class="ach-icon">&#129513;</div>
         <div><div class="ach-title">WordPress Certifications</div><div class="ach-sub">Coursera — CMS &amp; Web Development</div></div>
       </div>
       <div class="achievement-card reveal">
-        <div class="ach-icon">🌍</div>
+        <div class="ach-icon">&#127757;</div>
         <div><div class="ach-title">IELTS Band 7.5</div><div class="ach-sub">International English Language Testing System</div></div>
       </div>
-       
+    </div>
   </div>
 </section>
 
@@ -518,7 +499,7 @@
           <div class="edu-label">Education</div>
           <div class="edu-degree">BSc. Computer Science</div>
           <div class="edu-school">Skyline University Nigeria</div>
-          <div class="edu-award">🥇 Best Graduating Student</div>
+          <div class="edu-award">&#127945; Best Graduating Student</div>
         </div>
       </div>
     </div>
@@ -533,10 +514,10 @@
       <h2 class="section-title">Let's build something<br><em>great together</em></h2>
       <p class="contact-desc">I'm actively looking for Full-Stack, Backend, or Junior Software Engineer roles. If you're building something interesting and need someone who brings both technical depth and genuine initiative — let's talk.</p>
       <div class="social-links">
-        <a id="email-link" href="#" class="social-link">
+        <button id="email-copy-btn" class="social-link" style="border:1px solid var(--border2);">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
-          <span id="email-text">Email me</span>
-        </a>
+          <span id="email-copy-label">kareemayasminimam&#64;gmail.com</span>
+        </button>
         <a id="li-link" href="#" class="social-link">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           LinkedIn
@@ -550,63 +531,83 @@
           WhatsApp
         </a>
       </div>
-      <a id="email-btn" href="#" class="btn-primary" style="margin:0 auto;display:inline-flex;">Send me an email →</a>
+      <button id="email-cta-btn" class="btn-primary" style="margin:0 auto;display:inline-flex;border:none;cursor:pointer;">
+        <span id="email-cta-label">Copy email address</span>
+      </button>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
 <footer>
-  <p>© 2025 Kareema Yasmin Imam — Full-Stack Developer · Built with care</p>
+  <p>&copy; 2025 Kareema Yasmin Imam &mdash; Full-Stack Developer &middot; Built with care</p>
 </footer>
 
 <script>
-(function() {
-  // Assemble links at runtime — bypasses any preview-layer obfuscation
-  var e = ['k','a','r','e','e','m','a','y','a','s','m','i','n','i','m','a','m','@','g','m','a','i','l','.','c','o','m'].join('');
-  var links = {
-    'email-link': 'mailto:' + e,
-    'email-btn':  'mailto:' + e,
-    'li-link':    'https://www.linkedin.com/in/kareema-imam',
-    'gh-link':    'https://github.com/Kayyyimam',
-    'wa-link':    'https://wa.me/2348088507688'
-  };
+(function () {
+  // Email stored as char codes — invisible to any scanner
+  var addr = [107,97,114,101,101,109,97,121,97,115,109,105,110,105,109,97,109,64,103,109,97,105,108,46,99,111,109]
+    .map(function(c){ return String.fromCharCode(c); }).join('');
 
-  Object.keys(links).forEach(function(id) {
+  function copyEmail(labelEl, original) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(addr).then(function () {
+        labelEl.textContent = 'Copied!';
+        setTimeout(function () { labelEl.textContent = original; }, 2000);
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = addr;
+      ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      try { document.execCommand('copy'); } catch(e){}
+      document.body.removeChild(ta);
+      labelEl.textContent = 'Copied!';
+      setTimeout(function () { labelEl.textContent = original; }, 2000);
+    }
+  }
+
+  var inlineBtn = document.getElementById('email-copy-btn');
+  var inlineLbl = document.getElementById('email-copy-label');
+  if (inlineBtn) inlineBtn.addEventListener('click', function () { copyEmail(inlineLbl, addr); });
+
+  var ctaBtn = document.getElementById('email-cta-btn');
+  var ctaLbl = document.getElementById('email-cta-label');
+  if (ctaBtn) ctaBtn.addEventListener('click', function () { copyEmail(ctaLbl, 'Copy email address'); });
+
+  // Other links
+  var links = {
+    'li-link': 'https://www.linkedin.com/in/kareema-imam',
+    'gh-link':  'https://github.com/Kayyyimam',
+    'wa-link':  'https://wa.me/2348088507688'
+  };
+  Object.keys(links).forEach(function (id) {
     var el = document.getElementById(id);
     if (!el) return;
     el.setAttribute('href', links[id]);
-    if (id === 'email-link') {
-      var span = document.getElementById('email-text');
-      if (span) span.textContent = e;
-    }
-    el.addEventListener('click', function(ev) {
+    el.addEventListener('click', function (ev) {
       ev.preventDefault();
-      if (links[id].indexOf('mailto') === 0) {
-        window.location.href = links[id];
-      } else {
-        window.open(links[id], '_blank', 'noopener,noreferrer');
-      }
+      window.open(links[id], '_blank', 'noopener,noreferrer');
     });
   });
 
   // Scroll reveal
   var items = document.querySelectorAll('.reveal');
-  var io = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         io.unobserve(entry.target);
       }
     });
   }, { threshold: 0.08 });
-  items.forEach(function(el) { io.observe(el); });
+  items.forEach(function (el) { io.observe(el); });
 
   // Stagger grid children
-  ['skills-grid','projects-grid','achievements-grid'].forEach(function(cls) {
-    var grids = document.querySelectorAll('.' + cls);
-    grids.forEach(function(grid) {
-      grid.querySelectorAll('.reveal').forEach(function(el, i) {
+  ['skills-grid','projects-grid','achievements-grid'].forEach(function (cls) {
+    document.querySelectorAll('.' + cls).forEach(function (grid) {
+      grid.querySelectorAll('.reveal').forEach(function (el, i) {
         el.style.transitionDelay = (i * 0.07) + 's';
       });
     });
